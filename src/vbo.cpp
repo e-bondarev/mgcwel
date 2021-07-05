@@ -1,6 +1,6 @@
 #include "vbo.h"
 
-namespace ww {
+namespace mw {
 
 VBO::VBO(GLuint attribute, Type type, Usage usage, size_t amount, size_t size, const void *data, std::vector<VertexBufferLayout> layouts)
 {
@@ -42,7 +42,7 @@ VBO::~VBO()
     glBindBuffer(this->type, 0);
     glDeleteBuffers(1, &handle);
 
-    WERWEL_DEBUG_LOG_OUT("[Call] VBO destructor");
+    MW_DEBUG_LOG_OUT("[Call] VBO destructor");
 }
 
 void VBO::Bind() const

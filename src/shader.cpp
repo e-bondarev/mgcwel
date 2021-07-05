@@ -1,6 +1,6 @@
 #include "Shader.h"
 
-namespace ww {
+namespace mw {
 
 Shader::Shader(const std::string &vsCode, const std::string &fsCode, const std::vector<std::string>& uniforms)
 {
@@ -16,7 +16,7 @@ Shader::Shader(const std::string &vsCode, const std::string &fsCode, const std::
 		CreateUniform(uniforms[i]);
 	}
 
-	WERWEL_DEBUG_LOG_OUT("[Call] Shader constructor");
+	MW_DEBUG_LOG_OUT("[Call] Shader constructor");
 }
 
 Shader::~Shader()
@@ -29,7 +29,7 @@ Shader::~Shader()
 	glDeleteShader(fsHandle);
 	glDeleteProgram(handle);
 
-	WERWEL_DEBUG_LOG_OUT("[Call] Shader destructor");
+	MW_DEBUG_LOG_OUT("[Call] Shader destructor");
 }
 
 void Shader::Link() const
@@ -76,9 +76,9 @@ GLuint Shader::CreateShader(const std::string &shaderCode, GLuint shaderType)
 		for (size_t i = 0; i < errorFunctionName.size(); i++)
 			separator += "-";
 
-		WERWEL_LOG_OUT(errorFunctionName);
-		WERWEL_LOG_OUT("Error occured while compiling a shader: " << log);
-		WERWEL_LOG_OUT(separator);
+		MW_LOG_OUT(errorFunctionName);
+		MW_LOG_OUT("Error occured while compiling a shader: " << log);
+		MW_LOG_OUT(separator);
 
 		return -1;
 	}

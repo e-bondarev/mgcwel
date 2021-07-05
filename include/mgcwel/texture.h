@@ -2,7 +2,9 @@
 
 #include "gpu_entity.h"
 
-namespace ww {
+#include "pch.h"
+
+namespace mw {
 
 enum class Interpolation
 {

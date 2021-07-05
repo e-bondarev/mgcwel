@@ -2,7 +2,7 @@
 
 #include "imgui/imgui.h"
 
-namespace ww {
+namespace mw {
 
 void Input::Create(GLFWwindow *window)
 {

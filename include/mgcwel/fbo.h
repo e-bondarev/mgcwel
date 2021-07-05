@@ -6,7 +6,9 @@
 
 #include "gpu_entity.h"
 
-namespace ww {
+#include "pch.h"
+
+namespace mw {
 
 class FBO : public GPUEntity
 {

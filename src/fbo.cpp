@@ -1,6 +1,6 @@
 #include "FBO.h"
 
-namespace ww {
+namespace mw {
 
 FBO::FBO(Vec2 size, GLbitfield buffersToClear, std::vector<GLuint> drawBuffers)
 	: size { size }, buffersToClear{ buffersToClear }, drawBuffers{ drawBuffers }

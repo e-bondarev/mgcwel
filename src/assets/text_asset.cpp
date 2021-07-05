@@ -2,7 +2,7 @@
 
 #include <fstream>
 
-namespace ww {
+namespace mw {
 
 TextAsset::TextAsset(const std::string &path, const std::string& root)
 {
@@ -12,15 +12,14 @@ TextAsset::TextAsset(const std::string &path, const std::string& root)
 void TextAsset::Load(const std::string &path, const std::string& root)
 {
 	std::ifstream file;
-	std::string fullPath = root + path;
+	std::string fullPath = ROOT_DIR + path;
 
 	file.open(fullPath);
 
 	if (!file.is_open())
 	{
-		// Window::Minimize();
-		// NF_ERROR_POPUP("Could not load a text asset: " + fullPath, "TextAsset::Load()");
-		// NF_ERROR_EXIT();
+		MW_ERROR_POPUP("Could not load an image asset: " + fullPath, "ImageAsset::Load()");
+		MW_ERROR_EXIT();
 	}
 
 	while (!file.eof())

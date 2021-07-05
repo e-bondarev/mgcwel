@@ -1,6 +1,6 @@
 #include "Texture.h"
 
-namespace ww {
+namespace mw {
 
 Texture::Texture(Vec2 size, Pixels_t data, GLint internalFormat, GLuint format, GLuint type, Parameters_t params) : size{size}, internalFormat{internalFormat}, format{format}, type{type}
 {

@@ -1,13 +1,8 @@
 #include "window/gui.h"
-
 #include "window/window.h"
-
-// #include "themes/theme0.h"
-// #include "themes/theme1.h"
-
 #include "window/input.h"
 
-namespace ww {
+namespace mw {
 
 void Gui::Create()
 {
@@ -16,8 +11,8 @@ void Gui::Create()
 	ImGuiIO &io = ImGui::GetIO();
 	io.IniFilename = nullptr;
 	io.ConfigFlags = ImGuiConfigFlags_DockingEnable;
-	defaultFont = io.Fonts->AddFontFromFileTTF(std::string("assets/fonts/Roboto-400.ttf").c_str(), 16);
-	titleFont = io.Fonts->AddFontFromFileTTF(std::string("assets/fonts/Roboto-400.ttf").c_str(), 48);
+	defaultFont = io.Fonts->AddFontFromFileTTF(std::string(ROOT_DIR + "assets/fonts/Roboto-400.ttf").c_str(), 16);
+	titleFont = io.Fonts->AddFontFromFileTTF(std::string(ROOT_DIR + "assets/fonts/Roboto-400.ttf").c_str(), 48);
 
 	// Theme0();
 

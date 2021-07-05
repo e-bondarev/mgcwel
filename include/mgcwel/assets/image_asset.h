@@ -2,7 +2,9 @@
 
 #include "asset.h"
 
-namespace ww {
+#include "pch.h"
+
+namespace mw {
 
 class ImageAsset : public Asset
 {

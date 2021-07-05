@@ -2,7 +2,7 @@
 
 #include <vector>
 
-namespace ww {
+namespace mw {
 
 struct VertexBufferLayout 
 {

@@ -1,6 +1,6 @@
 #include "graphics_context.h"
 
-namespace ww {
+namespace mw {
 namespace GraphicsContext {
 
 void ClearColor(GLclampf r, GLclampf g, GLclampf b, GLclampf a)

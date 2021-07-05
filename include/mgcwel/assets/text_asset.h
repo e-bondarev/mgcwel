@@ -2,7 +2,7 @@
 
 #include "asset.h"
 
-namespace ww {
+namespace mw {
 
 class TextAsset : public Asset
 {

@@ -5,7 +5,7 @@
 #include "window/gui.h"
 #include "window/input.h"
 
-namespace ww {
+namespace mw {
 namespace Window {
 
 std::vector<std::function<void()>> callbacks = {};

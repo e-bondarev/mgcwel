@@ -2,7 +2,7 @@
 
 #include <GL/glew.h>
 
-namespace ww {
+namespace mw {
 
 class GPUEntity {
 public:

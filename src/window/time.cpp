@@ -1,6 +1,6 @@
 #include "time.h"
 
-namespace ww {
+namespace mw {
 namespace Time {
 
 float delta = 0;

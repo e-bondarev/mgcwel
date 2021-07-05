@@ -3,7 +3,7 @@
 #define STB_IMAGE_IMPLEMENTATION
 #include "stb_image/stb_image.h"
 
-namespace ww {
+namespace mw {
 
 ImageAsset::ImageAsset(const std::string &path, const std::string& root)
 {
@@ -13,12 +13,12 @@ ImageAsset::ImageAsset(const std::string &path, const std::string& root)
 void ImageAsset::Load(const std::string &path, const std::string& root)
 {
 	int width, height;
-	std::string fullPath = root + path;
+	std::string fullPath = ROOT_DIR + path;
 	data = stbi_load(fullPath.c_str(), &width, &height, &amountOfChannels, 0);
 	if (!data)
 	{
-		// NF_ERROR_POPUP("Could not load an image asset: " + fullPath, "ImageAsset::Load()");
-		// NF_ERROR_EXIT();
+		MW_ERROR_POPUP("Could not load an image asset: " + fullPath, "ImageAsset::Load()");
+		MW_ERROR_EXIT();
 	}
 	size = {static_cast<float>(width), static_cast<float>(height)};
 }

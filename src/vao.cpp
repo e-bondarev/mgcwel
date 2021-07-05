@@ -1,11 +1,11 @@
 #include "vao.h"
 
-namespace ww {
+namespace mw {
 
 VAO::VAO()
 {
 	glGenVertexArrays(1, &handle);
-	WERWEL_DEBUG_LOG_OUT("[Call] Vao constructor");
+	MW_DEBUG_LOG_OUT("[Call] Vao constructor");
 }
 
 VAO::~VAO()
@@ -13,7 +13,7 @@ VAO::~VAO()
 	Unbind();
 	glDeleteVertexArrays(1, &handle);
 
-	WERWEL_DEBUG_LOG_OUT("[Call] Vao destructor");
+	MW_DEBUG_LOG_OUT("[Call] Vao destructor");
 }
 
 }

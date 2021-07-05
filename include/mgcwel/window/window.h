@@ -5,10 +5,7 @@
 
 #include "maths/maths.h"
 
-#define NF_WINDOW_WIDTH() 	::ww::Window::GetSize().x
-#define NF_WINDOW_HEIGHT() 	::ww::Window::GetSize().y
-
-namespace ww {
+namespace mw {
 namespace Window {
 
 enum class Mode

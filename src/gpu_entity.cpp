@@ -1,6 +1,6 @@
 #include "gpu_entity.h"
 
-namespace ww {
+namespace mw {
 
 GLuint GPUEntity::GetHandle() const 
 {

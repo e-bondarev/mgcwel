@@ -4,7 +4,7 @@
 
 #include <GL/glew.h>
 
-namespace ww {
+namespace mw {
 
 using Uniforms = std::vector<std::string>;
 

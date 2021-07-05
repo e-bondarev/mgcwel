@@ -4,7 +4,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-namespace ww {
+// namespace mw {
 
 using Vec2 = glm::vec2;
 using Vec3 = glm::vec3;
@@ -74,4 +74,8 @@ inline static constexpr float g = 9.81f;
 
 }
 
-}
+#define IM_VEC2_CLASS_EXTRA                                               \
+        ImVec2(const Vec2& f) { x = f.x; y = f.y; }                       \
+        operator Vec2() const { return Vec2(x,y); }
+
+// }

@@ -4,7 +4,7 @@
 #include "vertex_buffer_layout.h"
 #include "vbo.h"
 
-namespace ww
+namespace mw
 {
 
 class VAO : public GPUEntity

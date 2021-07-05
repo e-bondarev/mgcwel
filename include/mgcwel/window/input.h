@@ -11,7 +11,7 @@
 // #define NF_KEY_RELEASED(key) ::ww::Input::KeyReleased(key)
 // #define NF_KEY_DOWN(key) ::ww::Input::KeyDown(key)
 
-namespace ww {
+namespace mw {
 namespace Input {
 
 inline static GLFWwindow *glfwWindow{nullptr};
@@ -21,18 +21,18 @@ inline static MouseWheelState mouseWheelState;
 
 enum class Key
 {
-	W = NF_KEY_W,
-	A = NF_KEY_A,
-	S = NF_KEY_S,
-	D = NF_KEY_D,
+	W = MW_KEY_W,
+	A = MW_KEY_A,
+	S = MW_KEY_S,
+	D = MW_KEY_D,
 
-	Space = NF_KEY_SPACE,
-	Esc = NF_KEY_ESCAPE,
+	Space 	= MW_KEY_SPACE,
+	Esc 	= MW_KEY_ESCAPE,
 
-	Num1 = NF_KEY_1,
-	Num2 = NF_KEY_2,
-	Num3 = NF_KEY_3,
-	Num4 = NF_KEY_4,
+	Num1 = MW_KEY_1,
+	Num2 = MW_KEY_2,
+	Num3 = MW_KEY_3,
+	Num4 = MW_KEY_4,
 };
 
 enum class Button
