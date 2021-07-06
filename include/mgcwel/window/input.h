@@ -7,9 +7,9 @@
 #include "keys.h"
 #include "buttons.h"
 
-// #define NF_KEY_PRESSED(key) ::ww::Input::KeyPressed(key)
-// #define NF_KEY_RELEASED(key) ::ww::Input::KeyReleased(key)
-// #define NF_KEY_DOWN(key) ::ww::Input::KeyDown(key)
+// #define MW_KEY_PRESSED(key) ::ww::Input::KeyPressed(key)
+// #define MW_KEY_RELEASED(key) ::ww::Input::KeyReleased(key)
+// #define MW_KEY_DOWN(key) ::ww::Input::KeyDown(key)
 
 namespace mw {
 namespace Input {
@@ -26,8 +26,8 @@ enum class Key
 	S = MW_KEY_S,
 	D = MW_KEY_D,
 
-	Space 	= MW_KEY_SPACE,
-	Esc 	= MW_KEY_ESCAPE,
+	Space = MW_KEY_SPACE,
+	Esc = MW_KEY_ESCAPE,
 
 	Num1 = MW_KEY_1,
 	Num2 = MW_KEY_2,
@@ -37,8 +37,8 @@ enum class Key
 
 enum class Button
 {
-	Left = NF_MOUSE_BUTTON_LEFT,
-	Right = NF_MOUSE_BUTTON_RIGHT
+	Left = MW_MOUSE_BUTTON_LEFT,
+	Right = MW_MOUSE_BUTTON_RIGHT
 };
 
 void MouseWheelCallback(GLFWwindow *glfwWindow, double xOffset, double yOffset);

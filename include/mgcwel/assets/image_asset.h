@@ -9,12 +9,12 @@ namespace mw {
 class ImageAsset : public Asset
 {
 public:
-	ImageAsset(const std::string &path, const std::string& root = "");
+	ImageAsset(const std::string &path);
 	ImageAsset() = default;
 
 	~ImageAsset();
 
-	virtual void Load(const std::string &path, const std::string& root = "") override;
+	virtual void Load(const std::string &path) override;
 
 	const unsigned char *GetData() const;
 	Vec2 GetSize() const;
